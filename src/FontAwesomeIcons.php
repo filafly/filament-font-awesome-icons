@@ -29,7 +29,7 @@ class FontAwesomeIcons extends IconSet
     protected array $iconMap = [
         'panels::global-search.field' => 'magnifying-glass',
         'panels::pages.dashboard.actions.filter' => 'filter',
-        'panels::pages.dashboard.navigation-item' => 'building',
+        'panels::pages.dashboard.navigation-item' => 'house',
         'panels::pages.password-reset.request-password-reset.actions.login' => 'arrow-right',
         'panels::pages.password-reset.request-password-reset.actions.login.rtl' => 'arrow-left',
         'panels::resources.pages.edit-record.navigation-item' => 'pen-to-square',
