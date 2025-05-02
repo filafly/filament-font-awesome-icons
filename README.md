@@ -4,7 +4,7 @@
 
 # Filament FontAwesome Icons
 
-A FontAwesome icon set implementation for Filament 3.x, providing a comprehensive set of FontAwesome icons that seamlessly integrate with Filament's interface.
+A Font Awesome icon set implementation for Filament 3.x, providing a comprehensive set of Font Awesome icons that seamlessly integrate with Filament's interface.
 
 ## Installation
 
@@ -30,35 +30,34 @@ public function panel(Panel $panel): Panel
 
 ## Icon Styles
 
-FontAwesome icons come in multiple styles that you can switch between. Available styles include:
+Font Awesome icons come in multiple styles that you can switch between. Available styles include:
 
-- Regular (default)
-- Thin
-- Light
-- Bold
-- Fill
-- Duotone
+- Classic Solid (default)
+- Classic Regular
+- Classic Light
+- Classic Thin
+- Duotone Solid
+- Sharp Solid
+- Sharp Regular
+- Sharp Light
+- Sharp Thin
+- Sharp Duotone Solid
+- Brands
 
 You can change the style using the following methods:
 
 ```php
-// Set to thin style
-FontAwesomeIcons::make()->thin();
-
-// Set to light style
-FontAwesomeIcons::make()->light();
-
-// Set to regular style (default)
-FontAwesomeIcons::make()->regular();
-
-// Set to bold style
-FontAwesomeIcons::make()->bold();
-
-// Set to fill style
-FontAwesomeIcons::make()->fill();
-
-// Set to duotone style
-FontAwesomeIcons::make()->duotone();
+FontAwesomeIcons::make()->classicSolid(); // (default)
+FontAwesomeIcons::make()->classicRegular();
+FontAwesomeIcons::make()->classicLight();
+FontAwesomeIcons::make()->classicThin();
+FontAwesomeIcons::make()->duotoneSolid();
+FontAwesomeIcons::make()->sharpSolid();
+FontAwesomeIcons::make()->sharpRegular();
+FontAwesomeIcons::make()->sharpLight();
+FontAwesomeIcons::make()->sharpThin();
+FontAwesomeIcons::make()->sharpDuotoneSolid();
+FontAwesomeIcons::make()->brands();
 ```
 
 ## Override Specific Icons
@@ -69,13 +68,13 @@ Use the `overrideStyleForAlias` method with a [Filament Icon Alias](https://fila
 
 ```php
 // Override a single icon key
-FontAwesomeIcons::make()->overrideStyleForAlias('tables::actions.filter', 'thin');
+FontAwesomeIcons::make()->overrideStyleForAlias('tables::actions.filter', 'classicThin');
 
 // Override multiple icon keys at once
 FontAwesomeIcons::make()->overrideStyleForAlias([
     'tables::actions.filter',
     'actions::delete-action',
-], 'thin');
+], 'classicThin');
 ```
 
 ### Using Icon Names
@@ -83,14 +82,17 @@ Use the `overrideStyleForIcon` method with the actual FontAwesome icon name. Lik
 
 ```php
 // Override a single icon
-FontAwesomeIcons::make()->overrideStyleForIcon('font-awesome-user', 'thin');
+FontAwesomeIcons::make()->overrideStyleForIcon('font-awesome-user', 'classicThin');
 
 // Override multiple icons at once
 FontAwesomeIcons::make()->overrideStyleForIcon([
     'font-awesome-user',
     'font-awesome-caret-up',
-], 'thin');
+], 'classicThin');
 ```
+
+## Free vs Paid
+If you are using the free version of Font Awesome, you'll be limited in your style choices since the free version only includes a limited number of icons. To handle this gracefully, you can add the `free()` method to the plugin which will automatically fallback to Classic Solid for any icons that don't exist in Classic Regular style:
 
 ## License
 The MIT License (MIT). Please see [License](LICENSE.md) for more information.
