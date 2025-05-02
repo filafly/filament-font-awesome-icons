@@ -94,5 +94,15 @@ FontAwesomeIcons::make()->overrideStyleForIcon([
 ## Free vs Paid
 If you are using the free version of Font Awesome, you'll be limited in your style choices since the free version only includes a limited number of icons. To handle this gracefully, you can add the `free()` method to the plugin which will automatically fallback to Classic Solid for any icons that don't exist in Classic Regular style:
 
+```php
+...
+->plugin(
+    FontAwesomeIcons::make()->classicRegular()->free()
+)
+...
+```
+
+If you are using a paid version of Font Awesome, be sure to follow the additional steps listed in the [blade-fontawesome](https://github.com/owenvoke/blade-fontawesome) repo.
+
 ## License
 The MIT License (MIT). Please see [License](LICENSE.md) for more information.
