@@ -108,5 +108,9 @@ If you are using the free version of Font Awesome, you'll be limited in your sty
 
 If you are using a paid version of Font Awesome, be sure to follow the additional steps listed in the [blade-fontawesome](https://github.com/owenvoke/blade-fontawesome) repo.
 
+## From FilaFly
+
+FilaFly also makes premium themes for Filament panels: Lucent, Prizm, Cypher and Citrus. [Browse the themes](https://filafly.com/themes?utm_source=github&utm_medium=readme&utm_campaign=font-awesome-icons).
+
 ## License
 The MIT License (MIT). Please see [License](LICENSE.md) for more information.
