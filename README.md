@@ -8,6 +8,8 @@ A Font Awesome icon set implementation for [Filament Icons](https://github.com/f
 
 This package extends the base Filament Icons package to replace Filament's default Heroicons with Font Awesome icons.
 
+More about this package on FilaFly: [Font Awesome icons for Filament on FilaFly](https://filafly.com/plugins/font-awesome-icons).
+
 ## Installation
 
 You can install the package via composer:
