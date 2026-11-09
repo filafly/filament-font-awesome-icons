@@ -18,6 +18,8 @@ You can install the package via composer:
 composer require filafly/filament-font-awesome-icons
 ```
 
+Not sure which Laravel and PHP versions your Filament version needs? See the [Filament version compatibility guide](https://filafly.com/guides/filament-version-compatibility).
+
 > **Note:** This package automatically installs the required `filafly/filament-icons` base package.
 
 After the package is installed, you must register the plugin in your Filament Panel provider:
